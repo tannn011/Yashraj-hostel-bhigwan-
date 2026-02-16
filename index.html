@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yashraj Hostel Bhigwan | Comfortable Stay for Students</title>
-  <meta name="description" content="Yashraj Hostel Bhigwan: good beds, clean bathrooms, 2-time meals, non-veg twice a week, 500m from college." />
+  <title>MILITARY BOYS HOSTEL| Comfortable Stay for Students</title>
+  <meta name="description" content="MILITARY BOYS HOSTEL: good beds, clean bathrooms, 2-time meals, non-veg twice a week, 500m from college." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +45,12 @@
         <a href="#food">Food</a>
         <a href="#gallery">Gallery</a>
         <a href="#reviews">Reviews</a>
-        <a class="btn btn-small" href="#contact">Enquiry</a>
+
+        <!-- Changed: Enquiry button to WhatsApp -->
+        <a class="btn btn-small" target="_blank" rel="noopener"
+           href="https://wa.me/918605463560?text=Hello%20Yashraj%20Hostel%20Bhigwan%2C%20I%20want%20to%20enquire%20about%20rooms%20and%20availability.">
+          WhatsApp
+        </a>
       </nav>
 
       <button class="hamburger" id="hamburger" aria-label="Open Menu">
@@ -58,7 +63,12 @@
       <a href="#food">Food</a>
       <a href="#gallery">Gallery</a>
       <a href="#reviews">Reviews</a>
-      <a href="#contact" class="btn btn-full">Enquiry</a>
+
+      <!-- Changed: Mobile Enquiry button to WhatsApp -->
+      <a class="btn btn-full" target="_blank" rel="noopener"
+         href="https://wa.me/918605463560?text=Hello%20MILITARY%20Hostel%20PUNE%2C%20I%20want%20to%20enquire%20about%20rooms%20and%20availability.">
+        WhatsApp Enquiry
+      </a>
     </div>
   </header>
 
@@ -81,7 +91,12 @@
           </p>
 
           <div class="hero-cta" data-animate="fade-up" data-delay="140">
-            <a class="btn" href="#contact">Check Availability</a>
+            <!-- Changed: Check Availability goes to WhatsApp -->
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://wa.me/918605463560?text=Hello%20Yashraj%20Hostel%20Bhigwan%2C%20I%20want%20to%20check%20availability%20and%20fees.">
+              Check Availability
+            </a>
+
             <a class="btn btn-ghost" href="#gallery">See Photos</a>
           </div>
 
@@ -102,20 +117,22 @@
         </div>
 
         <div class="hero-right" data-animate="float-in">
-          <!-- Replace these with your real hostel photos later -->
           <div class="hero-collage">
             <figure class="photo p1">
-              <img src="assets/hostel-front.jpg" alt="Yashraj Hostel front view" onerror="this.src='https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=70';" />
+              <img src="assets/hostel-front.jpg" alt="Yashraj Hostel front view"
+                   onerror="this.src='https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=70';" />
               <figcaption>Calm & safe surroundings</figcaption>
             </figure>
 
             <figure class="photo p2">
-              <img src="assets/bedroom.jpg" alt="Bedroom with good beds" onerror="this.src='https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=70';" />
+              <img src="assets/bedroom.jpg" alt="Bedroom with good beds"
+                   onerror="this.src='https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=70';" />
               <figcaption>Comfortable beds</figcaption>
             </figure>
 
             <figure class="photo p3">
-              <img src="assets/mess.jpg" alt="Mess and food service" onerror="this.src='https://images.unsplash.com/photo-1555992336-03a23c7b20b1?auto=format&fit=crop&w=1200&q=70';" />
+              <img src="assets/mess.jpg" alt="Mess and food service"
+                   onerror="this.src='https://images.unsplash.com/photo-1555992336-03a23c7b20b1?auto=format&fit=crop&w=1200&q=70';" />
               <figcaption>2-time quality food</figcaption>
             </figure>
           </div>
@@ -189,7 +206,11 @@
             </div>
           </div>
 
-          <a class="btn" href="#contact" data-animate="fade-up" data-delay="220">Ask Food Menu</a>
+          <!-- Changed: Ask Food Menu goes to WhatsApp -->
+          <a class="btn" target="_blank" rel="noopener"
+             href="https://wa.me/918605463560?text=Hello%20Yashraj%20Hostel%20Bhigwan%2C%20please%20share%20today%2Fweekly%20food%20menu%20and%20timings.">
+            Ask Food Menu
+          </a>
         </div>
 
         <div class="food-right" data-animate="float-in">
@@ -297,13 +318,13 @@
           <h2>Enquiry / Contact</h2>
           <p>
             Send a message to check availability, fees, room types, and food menu.
-            (Form is front-end only—can be connected to WhatsApp/email.)
+            (This form will open WhatsApp and send your message.)
           </p>
 
           <div class="contact-cards">
             <div class="mini" data-animate="fade-up" data-delay="60">
-              <strong>Location</strong>
-              <span>Bhigwan (500m near College)</span>
+              <strong>WhatsApp</strong>
+              <span>+91 86054 63560</span>
             </div>
             <div class="mini" data-animate="fade-up" data-delay="110">
               <strong>Facilities</strong>
@@ -312,24 +333,25 @@
           </div>
         </div>
 
-        <form class="form" data-animate="fade-up" data-delay="80" onsubmit="return false;">
+        <!-- Changed: IDs added so JS can read values -->
+        <form class="form" id="enquiryForm" data-animate="fade-up" data-delay="80">
           <label>
             Name
-            <input type="text" placeholder="Your name" required />
+            <input id="enqName" type="text" placeholder="Your name" required />
           </label>
 
           <label>
             Phone / WhatsApp
-            <input type="tel" placeholder="+91 XXXXX XXXXX" required />
+            <input id="enqPhone" type="tel" placeholder="+91 XXXXX XXXXX" required />
           </label>
 
           <label>
             Message
-            <textarea rows="4" placeholder="Ask about rooms, fees, food timings..." required></textarea>
+            <textarea id="enqMsg" rows="4" placeholder="Ask about rooms, fees, food timings..." required></textarea>
           </label>
 
-          <button class="btn btn-full" id="sendBtn" type="submit">Send Enquiry</button>
-          <p class="form-note">Tip: I can connect this to WhatsApp click-to-chat if you share your number.</p>
+          <button class="btn btn-full" id="sendBtn" type="submit">Send on WhatsApp</button>
+          <p class="form-note">Opens WhatsApp with your enquiry message.</p>
         </form>
       </div>
     </section>
@@ -337,12 +359,11 @@
 
   <footer class="footer">
     <div class="container foot">
-      <p>© <span id="year"></span> Yashraj Hostel Bhigwan. All rights reserved.</p>
+      <p>© <span id="year"></span> MILITARY BOYS HOSTEL|. All rights reserved.</p>
       <a href="#top" class="to-top">Back to top ↑</a>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
-              </html>
-
+</html>

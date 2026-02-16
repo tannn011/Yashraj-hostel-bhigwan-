@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yashraj Hostel Bhigwan | Comfortable Stay for Students</title>
+  <meta name="description" content="Yashraj Hostel Bhigwan: good beds, clean bathrooms, 2-time meals, non-veg twice a week, 500m from college." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Intro / Loader Animation -->
+  <div class="intro" id="intro">
+    <div class="intro-card">
+      <div class="intro-badge">Welcome</div>
+      <h1 class="intro-title">
+        <span class="brand">Yashraj</span> Hostel
+      </h1>
+      <p class="intro-sub">Bhigwan • Comfort • Clean • Student-Friendly</p>
+      <div class="intro-bar">
+        <span class="intro-progress" id="introProgress"></span>
+      </div>
+      <p class="intro-note">Loading your experience…</p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">
+        <div class="logo-mark">YH</div>
+        <div class="logo-text">
+          <strong>Yashraj Hostel</strong>
+          <span>Bhigwan</span>
+        </div>
+      </div>
+
+      <nav class="menu" aria-label="Main Navigation">
+        <a href="#features">Facilities</a>
+        <a href="#food">Food</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a class="btn btn-small" href="#contact">Enquiry</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#features">Facilities</a>
+      <a href="#food">Food</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact" class="btn btn-full">Enquiry</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="pill" data-animate="pop">
+            <span class="dot"></span> 500m close to College
+          </div>
+
+          <h1 class="hero-title" data-animate="fade-up">
+            A clean, comfortable hostel designed for <span class="grad">students</span>.
+          </h1>
+
+          <p class="hero-sub" data-animate="fade-up" data-delay="80">
+            Good beds, clean bathrooms & toilets, and a reliable 2-time food service.
+            Non-veg is included twice a week.
+          </p>
+
+          <div class="hero-cta" data-animate="fade-up" data-delay="140">
+            <a class="btn" href="#contact">Check Availability</a>
+            <a class="btn btn-ghost" href="#gallery">See Photos</a>
+          </div>
+
+          <div class="hero-stats" data-animate="fade-up" data-delay="200">
+            <div class="stat">
+              <strong>2×</strong>
+              <span>Daily Meals</span>
+            </div>
+            <div class="stat">
+              <strong>2×/week</strong>
+              <span>Non‑Veg Included</span>
+            </div>
+            <div class="stat">
+              <strong>Clean</strong>
+              <span>Bathrooms & Toilets</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right" data-animate="float-in">
+          <!-- Replace these with your real hostel photos later -->
+          <div class="hero-collage">
+            <figure class="photo p1">
+              <img src="assets/hostel-front.jpg" alt="Yashraj Hostel front view" onerror="this.src='https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=70';" />
+              <figcaption>Calm & safe surroundings</figcaption>
+            </figure>
+
+            <figure class="photo p2">
+              <img src="assets/bedroom.jpg" alt="Bedroom with good beds" onerror="this.src='https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=70';" />
+              <figcaption>Comfortable beds</figcaption>
+            </figure>
+
+            <figure class="photo p3">
+              <img src="assets/mess.jpg" alt="Mess and food service" onerror="this.src='https://images.unsplash.com/photo-1555992336-03a23c7b20b1?auto=format&fit=crop&w=1200&q=70';" />
+              <figcaption>2-time quality food</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-head" data-animate="fade-up">
+          <h2>Facilities</h2>
+          <p>Everything students need for a focused, comfortable stay.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card" data-animate="fade-up">
+            <h3>Good Sleeping Facility</h3>
+            <p>Comfortable beds and calm rooms for better rest and study focus.</p>
+            <ul>
+              <li>Neat rooms</li>
+              <li>Comfort-first beds</li>
+              <li>Peaceful environment</li>
+            </ul>
+          </article>
+
+          <article class="card" data-animate="fade-up" data-delay="80">
+            <h3>Clean Bathrooms & Toilets</h3>
+            <p>Hygiene is a priority. Regular cleaning keeps everything fresh.</p>
+            <ul>
+              <li>Clean & usable always</li>
+              <li>Student-friendly setup</li>
+              <li>Comfort & privacy</li>
+            </ul>
+          </article>
+
+          <article class="card" data-animate="fade-up" data-delay="140">
+            <h3>Close to College</h3>
+            <p>Just about <strong>500 meters</strong> from the college—save time daily.</p>
+            <ul>
+              <li>Quick commute</li>
+              <li>Less travel stress</li>
+              <li>More time to study</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Food -->
+    <section id="food" class="section section-alt">
+      <div class="container food-grid">
+        <div class="food-left" data-animate="fade-up">
+          <h2>Food & Mess Service</h2>
+          <p>
+            We provide <strong>2-time meals</strong> daily. Non-veg is included
+            <strong>2 times a week</strong> to keep students satisfied and energized.
+          </p>
+
+          <div class="checklist">
+            <div class="check" data-animate="fade-up" data-delay="60">
+              <span>✓</span> Daily 2-time food service (Lunch & Dinner)
+            </div>
+            <div class="check" data-animate="fade-up" data-delay="110">
+              <span>✓</span> Non-veg included twice a week
+            </div>
+            <div class="check" data-animate="fade-up" data-delay="160">
+              <span>✓</span> Clean mess area & hygienic serving
+            </div>
+          </div>
+
+          <a class="btn" href="#contact" data-animate="fade-up" data-delay="220">Ask Food Menu</a>
+        </div>
+
+        <div class="food-right" data-animate="float-in">
+          <div class="food-card">
+            <h3>Student Favorite</h3>
+            <p class="muted">Balanced meals that feel like home.</p>
+            <div class="food-tags">
+              <span>Fresh</span><span>Hygienic</span><span>Filling</span><span>Tasty</span>
+            </div>
+            <div class="food-illustration" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-head" data-animate="fade-up">
+          <h2>Gallery</h2>
+          <p>Add your real photos in the <code>assets/</code> folder for best results.</p>
+        </div>
+
+        <div class="gallery">
+          <a class="g-item" href="#" data-animate="fade-up">
+            <img src="assets/room-1.jpg" alt="Hostel room photo" onerror="this.src='https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=1200&q=70';"/>
+            <div class="g-cap">Bedrooms</div>
+          </a>
+          <a class="g-item" href="#" data-animate="fade-up" data-delay="60">
+            <img src="assets/room-2.jpg" alt="Beds photo" onerror="this.src='https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=1200&q=70';"/>
+            <div class="g-cap">Good Beds</div>
+          </a>
+          <a class="g-item" href="#" data-animate="fade-up" data-delay="120">
+            <img src="assets/bathroom.jpg" alt="Bathroom photo" onerror="this.src='https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=70';"/>
+            <div class="g-cap">Bathrooms</div>
+          </a>
+          <a class="g-item" href="#" data-animate="fade-up" data-delay="180">
+            <img src="assets/toilet.jpg" alt="Toilet photo" onerror="this.src='https://images.unsplash.com/photo-1600566753190-17f0baa2a6b8?auto=format&fit=crop&w=1200&q=70';"/>
+            <div class="g-cap">Toilets</div>
+          </a>
+          <a class="g-item" href="#" data-animate="fade-up" data-delay="240">
+            <img src="assets/mess-1.jpg" alt="Mess area photo" onerror="this.src='https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=1200&q=70';"/>
+            <div class="g-cap">Mess</div>
+          </a>
+          <a class="g-item" href="#" data-animate="fade-up" data-delay="300">
+            <img src="assets/hostel-outside.jpg" alt="Hostel outside" onerror="this.src='https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=1200&q=70';"/>
+            <div class="g-cap">Outside View</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section section-alt">
+      <div class="container">
+        <div class="section-head" data-animate="fade-up">
+          <h2>Student Reviews</h2>
+          <p>Sample reviews (you can replace with real student feedback + names).</p>
+        </div>
+
+        <div class="reviews">
+          <article class="review" data-animate="fade-up">
+            <div class="stars">★★★★★</div>
+            <p>“Rooms are clean and beds are comfortable. Food is good and the hostel is very close to college.”</p>
+            <div class="who">
+              <span class="avatar">AS</span>
+              <div>
+                <strong>Aditya S.</strong>
+                <span>Student</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="review" data-animate="fade-up" data-delay="80">
+            <div class="stars">★★★★★</div>
+            <p>“Best part is time saving—just 500m from college. Bathrooms are maintained well.”</p>
+            <div class="who">
+              <span class="avatar">RP</span>
+              <div>
+                <strong>Rohit P.</strong>
+                <span>Student</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="review" data-animate="fade-up" data-delay="140">
+            <div class="stars">★★★★☆</div>
+            <p>“Mess service is reliable. Non-veg twice a week is a plus. शांत आणि safe environment.”</p>
+            <div class="who">
+              <span class="avatar">NK</span>
+              <div>
+                <strong>Nikhil K.</strong>
+                <span>Student</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="contact-left" data-animate="fade-up">
+          <h2>Enquiry / Contact</h2>
+          <p>
+            Send a message to check availability, fees, room types, and food menu.
+            (Form is front-end only—can be connected to WhatsApp/email.)
+          </p>
+
+          <div class="contact-cards">
+            <div class="mini" data-animate="fade-up" data-delay="60">
+              <strong>Location</strong>
+              <span>Bhigwan (500m near College)</span>
+            </div>
+            <div class="mini" data-animate="fade-up" data-delay="110">
+              <strong>Facilities</strong>
+              <span>Good beds • Bathrooms • Toilets • Mess</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="form" data-animate="fade-up" data-delay="80" onsubmit="return false;">
+          <label>
+            Name
+            <input type="text" placeholder="Your name" required />
+          </label>
+
+          <label>
+            Phone / WhatsApp
+            <input type="tel" placeholder="+91 XXXXX XXXXX" required />
+          </label>
+
+          <label>
+            Message
+            <textarea rows="4" placeholder="Ask about rooms, fees, food timings..." required></textarea>
+          </label>
+
+          <button class="btn btn-full" id="sendBtn" type="submit">Send Enquiry</button>
+          <p class="form-note">Tip: I can connect this to WhatsApp click-to-chat if you share your number.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot">
+      <p>© <span id="year"></span> Yashraj Hostel Bhigwan. All rights reserved.</p>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+                </html>
+                  

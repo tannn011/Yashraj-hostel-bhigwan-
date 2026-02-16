@@ -1,51 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yashraj Hostel Bhigwan | Comfortable Stay for Students</title>
-  <meta name="description" content="Yashraj Hostel Bhigwan: good beds, clean bathrooms, 2-time meals, non-veg twice a week, 500m from college." />
+  <title>Yashraj Hostel Bhigwan | Near Dattakala College of Pharmacy</title>
+  <meta name="description" content="Yashraj Hostel Bhigwan: good beds, clean bathrooms & toilets, 2-time meals, non-veg twice a week. 500m near Dattakala College of Pharmacy. Fees ₹4200/month." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Intro / Loader Animation -->
-  <div class="intro" id="intro">
-    <div class="intro-card">
-      <div class="intro-badge">Welcome</div>
-      <h1 class="intro-title">
-        <span class="brand">Yashraj</span> Hostel
-      </h1>
-      <p class="intro-sub">Bhigwan • Comfort • Clean • Student-Friendly</p>
-      <div class="intro-bar">
-        <span class="intro-progress" id="introProgress"></span>
+  <!-- Intro -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-box">
+      <div class="intro-line"></div>
+      <h1 class="intro-title">Yashraj Hostel</h1>
+      <p class="intro-sub">Bhigwan</p>
+      <div class="intro-dots">
+        <span></span><span></span><span></span>
       </div>
-      <p class="intro-note">Loading your experience…</p>
     </div>
   </div>
 
   <!-- Header -->
   <header class="header">
     <div class="container nav">
-      <div class="logo">
-        <div class="logo-mark">YH</div>
-        <div class="logo-text">
+      <a class="brand" href="#top" aria-label="Yashraj Hostel Bhigwan">
+        <span class="brand-mark">YH</span>
+        <span class="brand-text">
           <strong>Yashraj Hostel</strong>
-          <span>Bhigwan</span>
-        </div>
-      </div>
+          <small>Bhigwan</small>
+        </span>
+      </a>
 
       <nav class="menu" aria-label="Main Navigation">
         <a href="#features">Facilities</a>
         <a href="#food">Food</a>
-        <a href="#gallery">Gallery</a>
+        <a href="#pricing">Fees</a>
+        <a href="#gallery">Photos</a>
         <a href="#reviews">Reviews</a>
-        <a class="btn btn-small" href="#contact">Enquiry</a>
+        <a class="btn btn-small" href="#contact">Contact</a>
       </nav>
 
       <button class="hamburger" id="hamburger" aria-label="Open Menu">
@@ -56,111 +54,128 @@
     <div class="mobile-menu" id="mobileMenu">
       <a href="#features">Facilities</a>
       <a href="#food">Food</a>
-      <a href="#gallery">Gallery</a>
+      <a href="#pricing">Fees</a>
+      <a href="#gallery">Photos</a>
       <a href="#reviews">Reviews</a>
-      <a href="#contact" class="btn btn-full">Enquiry</a>
+      <a class="btn btn-full" href="#contact">Contact</a>
     </div>
   </header>
 
-  <!-- Hero -->
   <main>
+    <!-- Hero -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-left">
-          <div class="pill" data-animate="pop">
-            <span class="dot"></span> 500m close to College
+          <div class="badge" data-animate="fade">
+            Near <strong>Dattakala College of Pharmacy</strong> • Approx. <strong>500m</strong>
           </div>
 
-          <h1 class="hero-title" data-animate="fade-up">
-            A clean, comfortable hostel designed for <span class="grad">students</span>.
+          <h1 class="hero-title" data-animate="up">
+            Simple, clean and comfortable hostel for students in Bhigwan
           </h1>
 
-          <p class="hero-sub" data-animate="fade-up" data-delay="80">
-            Good beds, clean bathrooms & toilets, and a reliable 2-time food service.
-            Non-veg is included twice a week.
+          <p class="hero-sub" data-animate="up" data-delay="80">
+            Good beds, clean bathrooms & toilets, and reliable <strong>2-time meals</strong>.
+            <strong>Non‑veg included 2 times a week.</strong>
           </p>
 
-          <div class="hero-cta" data-animate="fade-up" data-delay="140">
-            <a class="btn" href="#contact">Check Availability</a>
-            <a class="btn btn-ghost" href="#gallery">See Photos</a>
+          <div class="hero-cta" data-animate="up" data-delay="140">
+            <a class="btn" href="https://wa.me/918605463560?text=Hello%20Yashraj%20Hostel%20Bhigwan%2C%20I%20want%20to%20enquire%20about%20rooms%20and%20availability.%20Fees%20%E2%82%B94200%2Fmonth."
+               target="_blank" rel="noopener">WhatsApp Enquiry</a>
+
+            <a class="btn btn-outline" href="tel:+918605463560">Call Now</a>
           </div>
 
-          <div class="hero-stats" data-animate="fade-up" data-delay="200">
-            <div class="stat">
-              <strong>2×</strong>
-              <span>Daily Meals</span>
+          <div class="highlights" data-animate="up" data-delay="200">
+            <div class="hl">
+              <strong>₹4200 / month</strong>
+              <span>Affordable fees</span>
             </div>
-            <div class="stat">
-              <strong>2×/week</strong>
-              <span>Non‑Veg Included</span>
+            <div class="hl">
+              <strong>2× meals</strong>
+              <span>Lunch & Dinner</span>
             </div>
-            <div class="stat">
+            <div class="hl">
               <strong>Clean</strong>
-              <span>Bathrooms & Toilets</span>
+              <span>Bathrooms & toilets</span>
             </div>
           </div>
         </div>
 
-        <div class="hero-right" data-animate="float-in">
-          <!-- Replace these with your real hostel photos later -->
-          <div class="hero-collage">
-            <figure class="photo p1">
-              <img src="assets/hostel-front.jpg" alt="Yashraj Hostel front view" onerror="this.src='https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=70';" />
-              <figcaption>Calm & safe surroundings</figcaption>
-            </figure>
+        <div class="hero-right" data-animate="fade">
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <h3>Yashraj Hostel Bhigwan</h3>
+              <p>Student-friendly stay near college</p>
+            </div>
 
-            <figure class="photo p2">
-              <img src="assets/bedroom.jpg" alt="Bedroom with good beds" onerror="this.src='https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=70';" />
-              <figcaption>Comfortable beds</figcaption>
-            </figure>
+            <!-- Replace these with your real images in assets/ -->
+            <div class="hero-photos">
+              <img src="assets/hostel-front.jpg" alt="Hostel front view"
+                   onerror="this.src='https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=70';">
+              <img src="assets/bedroom.jpg" alt="Bedroom and beds"
+                   onerror="this.src='https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=70';">
+              <img src="assets/mess.jpg" alt="Mess and food"
+                   onerror="this.src='https://images.unsplash.com/photo-1555992336-03a23c7b20b1?auto=format&fit=crop&w=1200&q=70';">
+            </div>
 
-            <figure class="photo p3">
-              <img src="assets/mess.jpg" alt="Mess and food service" onerror="this.src='https://images.unsplash.com/photo-1555992336-03a23c7b20b1?auto=format&fit=crop&w=1200&q=70';" />
-              <figcaption>2-time quality food</figcaption>
-            </figure>
+            <div class="hero-card-bottom">
+              <div class="mini">
+                <span>📍</span>
+                <div>
+                  <strong>500m near college</strong>
+                  <small>Dattakala College of Pharmacy</small>
+                </div>
+              </div>
+              <div class="mini">
+                <span>🍽️</span>
+                <div>
+                  <strong>2-time food</strong>
+                  <small>Non‑veg 2× / week</small>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="hero-bg" aria-hidden="true"></div>
     </section>
 
     <!-- Features -->
     <section id="features" class="section">
       <div class="container">
-        <div class="section-head" data-animate="fade-up">
+        <div class="section-head" data-animate="up">
           <h2>Facilities</h2>
-          <p>Everything students need for a focused, comfortable stay.</p>
+          <p>Comfort + cleanliness + convenience for students.</p>
         </div>
 
-        <div class="cards">
-          <article class="card" data-animate="fade-up">
-            <h3>Good Sleeping Facility</h3>
-            <p>Comfortable beds and calm rooms for better rest and study focus.</p>
+        <div class="grid-3">
+          <article class="card" data-animate="up">
+            <h3>Good Beds & Sleeping Facility</h3>
+            <p>Comfortable beds and peaceful environment for better rest.</p>
             <ul>
-              <li>Neat rooms</li>
-              <li>Comfort-first beds</li>
-              <li>Peaceful environment</li>
+              <li>Clean rooms</li>
+              <li>Comfortable beds</li>
+              <li>Student-friendly stay</li>
             </ul>
           </article>
 
-          <article class="card" data-animate="fade-up" data-delay="80">
-            <h3>Clean Bathrooms & Toilets</h3>
-            <p>Hygiene is a priority. Regular cleaning keeps everything fresh.</p>
+          <article class="card" data-animate="up" data-delay="80">
+            <h3>Bathrooms & Toilets</h3>
+            <p>Maintained hygiene with regular cleaning.</p>
             <ul>
-              <li>Clean & usable always</li>
-              <li>Student-friendly setup</li>
-              <li>Comfort & privacy</li>
+              <li>Clean bathrooms</li>
+              <li>Clean toilets</li>
+              <li>Privacy & comfort</li>
             </ul>
           </article>
 
-          <article class="card" data-animate="fade-up" data-delay="140">
-            <h3>Close to College</h3>
-            <p>Just about <strong>500 meters</strong> from the college—save time daily.</p>
+          <article class="card" data-animate="up" data-delay="140">
+            <h3>Near College (Approx. 500m)</h3>
+            <p>Save time daily—easy walking distance.</p>
             <ul>
-              <li>Quick commute</li>
               <li>Less travel stress</li>
-              <li>More time to study</li>
+              <li>More study time</li>
+              <li>Convenient location</li>
             </ul>
           </article>
         </div>
@@ -168,168 +183,157 @@
     </section>
 
     <!-- Food -->
-    <section id="food" class="section section-alt">
-      <div class="container food-grid">
-        <div class="food-left" data-animate="fade-up">
-          <h2>Food & Mess Service</h2>
+    <section id="food" class="section section-soft">
+      <div class="container two-col">
+        <div data-animate="up">
+          <h2>Food Service</h2>
           <p>
-            We provide <strong>2-time meals</strong> daily. Non-veg is included
-            <strong>2 times a week</strong> to keep students satisfied and energized.
+            We provide <strong>2-time good food</strong> service daily.
+            <strong>Non‑veg is included 2 times a week.</strong>
           </p>
 
-          <div class="checklist">
-            <div class="check" data-animate="fade-up" data-delay="60">
-              <span>✓</span> Daily 2-time food service (Lunch & Dinner)
-            </div>
-            <div class="check" data-animate="fade-up" data-delay="110">
-              <span>✓</span> Non-veg included twice a week
-            </div>
-            <div class="check" data-animate="fade-up" data-delay="160">
-              <span>✓</span> Clean mess area & hygienic serving
-            </div>
+          <div class="list">
+            <div class="tick" data-animate="up" data-delay="60">✓ Lunch & Dinner daily</div>
+            <div class="tick" data-animate="up" data-delay="110">✓ Non‑veg twice a week</div>
+            <div class="tick" data-animate="up" data-delay="160">✓ Hygienic mess area</div>
           </div>
 
-          <a class="btn" href="#contact" data-animate="fade-up" data-delay="220">Ask Food Menu</a>
+          <a class="btn btn-small" data-animate="up" data-delay="220"
+             href="https://wa.me/918605463560?text=Hello%2C%20please%20share%20your%20weekly%20mess%20menu%20and%20food%20timings."
+             target="_blank" rel="noopener">Ask Menu on WhatsApp</a>
         </div>
 
-        <div class="food-right" data-animate="float-in">
-          <div class="food-card">
-            <h3>Student Favorite</h3>
-            <p class="muted">Balanced meals that feel like home.</p>
-            <div class="food-tags">
-              <span>Fresh</span><span>Hygienic</span><span>Filling</span><span>Tasty</span>
-            </div>
-            <div class="food-illustration" aria-hidden="true"></div>
+        <div class="info-box" data-animate="fade">
+          <h3>Quick Info</h3>
+          <div class="info-row"><span>Fees</span><strong>₹4200 / month</strong></div>
+          <div class="info-row"><span>College</span><strong>Dattakala College of Pharmacy</strong></div>
+          <div class="info-row"><span>Distance</span><strong>Approx. 500m</strong></div>
+          <div class="info-row"><span>Contact</span><strong>+91 86054 63560</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section-head" data-animate="up">
+          <h2>Fees</h2>
+          <p>Simple pricing, suitable for students.</p>
+        </div>
+
+        <div class="pricing" data-animate="up" data-delay="80">
+          <div class="price-card">
+            <h3>Monthly Fees</h3>
+            <div class="price">₹4200 <small>/ month</small></div>
+            <p class="muted">Includes stay + 2-time food service. Non‑veg twice a week included.</p>
+            <a class="btn btn-full" href="https://wa.me/918605463560?text=Hello%20Yashraj%20Hostel%2C%20I%20want%20to%20confirm%20fees%20%E2%82%B94200%2Fmonth%20and%20check%20availability."
+               target="_blank" rel="noopener">Confirm Availability</a>
+            <p class="note">Final charges may depend on room type/availability.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Gallery -->
-    <section id="gallery" class="section">
+    <section id="gallery" class="section section-soft">
       <div class="container">
-        <div class="section-head" data-animate="fade-up">
-          <h2>Gallery</h2>
-          <p>Add your real photos in the <code>assets/</code> folder for best results.</p>
+        <div class="section-head" data-animate="up">
+          <h2>Photos</h2>
+          <p>Replace these placeholders with your hostel’s real photos in <code>assets/</code>.</p>
         </div>
 
         <div class="gallery">
-          <a class="g-item" href="#" data-animate="fade-up">
-            <img src="assets/room-1.jpg" alt="Hostel room photo" onerror="this.src='https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=1200&q=70';"/>
-            <div class="g-cap">Bedrooms</div>
-          </a>
-          <a class="g-item" href="#" data-animate="fade-up" data-delay="60">
-            <img src="assets/room-2.jpg" alt="Beds photo" onerror="this.src='https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=1200&q=70';"/>
-            <div class="g-cap">Good Beds</div>
-          </a>
-          <a class="g-item" href="#" data-animate="fade-up" data-delay="120">
-            <img src="assets/bathroom.jpg" alt="Bathroom photo" onerror="this.src='https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=70';"/>
-            <div class="g-cap">Bathrooms</div>
-          </a>
-          <a class="g-item" href="#" data-animate="fade-up" data-delay="180">
-            <img src="assets/toilet.jpg" alt="Toilet photo" onerror="this.src='https://images.unsplash.com/photo-1600566753190-17f0baa2a6b8?auto=format&fit=crop&w=1200&q=70';"/>
-            <div class="g-cap">Toilets</div>
-          </a>
-          <a class="g-item" href="#" data-animate="fade-up" data-delay="240">
-            <img src="assets/mess-1.jpg" alt="Mess area photo" onerror="this.src='https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=1200&q=70';"/>
-            <div class="g-cap">Mess</div>
-          </a>
-          <a class="g-item" href="#" data-animate="fade-up" data-delay="300">
-            <img src="assets/hostel-outside.jpg" alt="Hostel outside" onerror="this.src='https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=1200&q=70';"/>
-            <div class="g-cap">Outside View</div>
-          </a>
+          <figure class="g" data-animate="up">
+            <img src="assets/room-1.jpg" alt="Hostel bedroom"
+                 onerror="this.src='https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=1200&q=70';">
+            <figcaption>Bedrooms</figcaption>
+          </figure>
+          <figure class="g" data-animate="up" data-delay="60">
+            <img src="assets/room-2.jpg" alt="Beds"
+                 onerror="this.src='https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=1200&q=70';">
+            <figcaption>Good beds</figcaption>
+          </figure>
+          <figure class="g" data-animate="up" data-delay="120">
+            <img src="assets/bathroom.jpg" alt="Bathroom"
+                 onerror="this.src='https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=70';">
+            <figcaption>Bathrooms</figcaption>
+          </figure>
+          <figure class="g" data-animate="up" data-delay="180">
+            <img src="assets/mess-1.jpg" alt="Mess"
+                 onerror="this.src='https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=1200&q=70';">
+            <figcaption>Mess</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
     <!-- Reviews -->
-    <section id="reviews" class="section section-alt">
+    <section id="reviews" class="section">
       <div class="container">
-        <div class="section-head" data-animate="fade-up">
+        <div class="section-head" data-animate="up">
           <h2>Student Reviews</h2>
-          <p>Sample reviews (you can replace with real student feedback + names).</p>
+          <p>Sample reviews (I can update with real names/messages anytime).</p>
         </div>
 
-        <div class="reviews">
-          <article class="review" data-animate="fade-up">
+        <div class="grid-3">
+          <article class="review" data-animate="up">
             <div class="stars">★★★★★</div>
-            <p>“Rooms are clean and beds are comfortable. Food is good and the hostel is very close to college.”</p>
-            <div class="who">
-              <span class="avatar">AS</span>
-              <div>
-                <strong>Aditya S.</strong>
-                <span>Student</span>
-              </div>
-            </div>
+            <p>“Hostel is clean and very near to Dattakala College. Food is good and staff is helpful.”</p>
+            <strong>— Aditya (Student)</strong>
           </article>
-
-          <article class="review" data-animate="fade-up" data-delay="80">
+          <article class="review" data-animate="up" data-delay="80">
             <div class="stars">★★★★★</div>
-            <p>“Best part is time saving—just 500m from college. Bathrooms are maintained well.”</p>
-            <div class="who">
-              <span class="avatar">RP</span>
-              <div>
-                <strong>Rohit P.</strong>
-                <span>Student</span>
-              </div>
-            </div>
+            <p>“Bathrooms and toilets are maintained properly. Beds are comfortable.”</p>
+            <strong>— Rohit (Student)</strong>
           </article>
-
-          <article class="review" data-animate="fade-up" data-delay="140">
+          <article class="review" data-animate="up" data-delay="140">
             <div class="stars">★★★★☆</div>
-            <p>“Mess service is reliable. Non-veg twice a week is a plus. शांत आणि safe environment.”</p>
-            <div class="who">
-              <span class="avatar">NK</span>
-              <div>
-                <strong>Nikhil K.</strong>
-                <span>Student</span>
-              </div>
-            </div>
+            <p>“Affordable fees and good mess service. Non‑veg twice a week is nice.”</p>
+            <strong>— Nikhil (Student)</strong>
           </article>
         </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="container contact-grid">
-        <div class="contact-left" data-animate="fade-up">
-          <h2>Enquiry / Contact</h2>
+    <section id="contact" class="section section-soft">
+      <div class="container two-col">
+        <div data-animate="up">
+          <h2>Contact</h2>
           <p>
-            Send a message to check availability, fees, room types, and food menu.
-            (Form is front-end only—can be connected to WhatsApp/email.)
+            For admission, rooms, or visit, call or WhatsApp.
           </p>
 
-          <div class="contact-cards">
-            <div class="mini" data-animate="fade-up" data-delay="60">
-              <strong>Location</strong>
-              <span>Bhigwan (500m near College)</span>
-            </div>
-            <div class="mini" data-animate="fade-up" data-delay="110">
-              <strong>Facilities</strong>
-              <span>Good beds • Bathrooms • Toilets • Mess</span>
-            </div>
+          <div class="contact-box">
+            <div class="contact-row"><span>Phone / WhatsApp</span><strong>+91 86054 63560</strong></div>
+            <div class="contact-row"><span>College</span><strong>Dattakala College of Pharmacy</strong></div>
+            <div class="contact-row"><span>Fees</span><strong>₹4200 / month</strong></div>
+            <div class="contact-row"><span>Distance</span><strong>Approx. 500m near college</strong></div>
+          </div>
+
+          <div class="hero-cta">
+            <a class="btn" href="https://wa.me/918605463560?text=Hello%20Yashraj%20Hostel%20Bhigwan%2C%20I%20want%20to%20visit%20today%2Fthis%20week.%20Please%20share%20location."
+               target="_blank" rel="noopener">WhatsApp Now</a>
+            <a class="btn btn-outline" href="tel:+918605463560">Call</a>
           </div>
         </div>
 
-        <form class="form" data-animate="fade-up" data-delay="80" onsubmit="return false;">
+        <form class="form" data-animate="fade" onsubmit="return false;">
+          <h3>Quick Enquiry</h3>
           <label>
             Name
-            <input type="text" placeholder="Your name" required />
+            <input id="name" type="text" placeholder="Your name" required>
           </label>
-
           <label>
-            Phone / WhatsApp
-            <input type="tel" placeholder="+91 XXXXX XXXXX" required />
+            Phone
+            <input id="phone" type="tel" placeholder="+91 XXXXX XXXXX" required>
           </label>
-
           <label>
             Message
-            <textarea rows="4" placeholder="Ask about rooms, fees, food timings..." required></textarea>
+            <textarea id="msg" rows="4" placeholder="I want hostel admission. Please share availability..." required></textarea>
           </label>
-
-          <button class="btn btn-full" id="sendBtn" type="submit">Send Enquiry</button>
-          <p class="form-note">Tip: I can connect this to WhatsApp click-to-chat if you share your number.</p>
+          <button class="btn btn-full" id="sendWA">Send on WhatsApp</button>
+          <p class="note">This will open WhatsApp with your message.</p>
         </form>
       </div>
     </section>
@@ -337,12 +341,11 @@
 
   <footer class="footer">
     <div class="container foot">
-      <p>© <span id="year"></span> Yashraj Hostel Bhigwan. All rights reserved.</p>
-      <a href="#top" class="to-top">Back to top ↑</a>
+      <p>© <span id="year"></span> Yashraj Hostel Bhigwan</p>
+      <a href="#top">Back to top</a>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
-                </html>
-                  
+</html>

@@ -37,9 +37,7 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const delay = entry.target.getAttribute("data-delay");
-        if (delay) {
-          entry.target.style.transitionDelay = `${delay}ms`;
-        }
+        if (delay) entry.target.style.transitionDelay = `${delay}ms`;
         entry.target.classList.add("in-view");
         observer.unobserve(entry.target);
       }
@@ -47,15 +45,41 @@ const observer = new IntersectionObserver(
   },
   { threshold: 0.15 }
 );
-
 els.forEach(el => observer.observe(el));
 
-// Fake send button (front-end only)
-document.getElementById("sendBtn")?.addEventListener("click", () => {
-  const form = document.querySelector(".form");
+/* ========== WhatsApp Enquiry (YOUR NUMBER) ========== */
+const WHATSAPP_NUMBER = "918605463560"; // +91 86054 63560
+
+document.getElementById("enquiryForm")?.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const form = document.getElementById("enquiryForm");
   if (!form.checkValidity()) {
     form.reportValidity();
     return;
   }
-  alert("Enquiry noted! (This demo form is not connected yet.)\nTell me your WhatsApp number to connect it.");
+
+  const name = document.getElementById("enqName").value.trim();
+  const phone = document.getElementById("enqPhone").value.trim();
+  const message = document.getElementById("enqMsg").value.trim();
+
+  // This includes ALL important hostel information automatically
+  const text =
+`Hello Yashraj Hostel Bhigwan,
+I want to enquire.
+
+Name: ${name}
+Phone: ${phone}
+Message: ${message}
+
+Hostel Details:
+- Sleeping facility: Good beds
+- Bathrooms & toilets: Available
+- Food: 2-time meals daily
+- Non-veg: Included 2 times a week
+- Distance: About 500m close to college`;
+
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+  window.open(url, "_blank", "noopener,noreferrer");
 });
+
